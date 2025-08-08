@@ -7,14 +7,14 @@ function flu() {
             return 0
             ;;
         "clean")
-            fvm flutter clean && fvm dart run build_runner clean && fvm flutter pub cache clean
+            fvm dart run build_runner clean && fvm flutter clean && fvm flutter pub cache clean
             return 0
             ;;
         "gen_index")
             fvm dart run index_generator
             return 0
             ;;
-        "gen_loc")
+        "gen_lok")
             fvm dart run lokalise_flutter_sdk:gen-lok-l10n
             return 0
             ;;
@@ -47,7 +47,7 @@ function flu() {
                 "flu get"
                 "flu clean"
                 "flu gen_index"
-                "flu gen_loc"
+                "flu gen_lok"
                 "flu runner build"
                 "flu runner watch"
                 "flu format"
@@ -104,4 +104,12 @@ function flu() {
             echo "Invalid option"
             ;;
         esac
+}
+
+function gp() {
+    git push
+}
+
+function gf() {
+    git fetch
 }
