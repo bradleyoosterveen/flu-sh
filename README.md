@@ -2,7 +2,7 @@
 
 A collection of handy scripts for working with Flutter and Dart.
 
-## Installation
+## Installation (macOS)
 
 1. Download the file, and place it in `/Users/[name]`, for example: `/Users/bobdebakker/flu.sh`.
 2. Add the line `source ~/flu.sh` to `~/.zshrc`.
